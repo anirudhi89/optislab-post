@@ -38,12 +38,12 @@ function updatePic() {
         // nothing
     }
     else if (selectedval == 'StrainXX') {
-        document.getElementsByClassName("contourplot")[0].src = `assets/${selectedval}.png`
+        document.getElementsByClassName("contourplot")[0].src = `assets/images/${selectedval}.png`
     }
     else if (selectedval == 'StrainXY') {
-        document.getElementsByClassName("contourplot")[0].src = 'assets/2.jpg'
+        document.getElementsByClassName("contourplot")[0].src = 'assets/images/2.jpg'
     }
     else if (selectedval == 'StressXX') {
-        document.getElementsByClassName("contourplot")[0].src = 'assets/3.jpg'
+        document.getElementsByClassName("contourplot")[0].src = 'assets/images/3.jpg'
     }
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>OptiSlab Post Processor</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Question: Do I want to post this to a database or not-->
+        <!-- <form action="/TODOLATER" method="post"></form> -->
+
+        <!-- Question: Unsure of label regarding for and id, -->
+        <p>Note, if StrainXX is selected, page will dislay the image sent, if StrainXY, it will display an img with the number 2, and if StressXX, then it will display 3 </p>
+        <label for = 'type'>Select your type: </label>
+        <select id = 'type' name = 'type' onchange ="changeVal()">
+            <option disabled selected value = 'default'>Choose an option</option>
+            <option value="StrainXX">StrainXX</option>
+            <option value="StrainXY">StrainXY</option>
+            <option value="StressXX">StressXX</option>
+        </select>
+        <p id="selectedval">DEFAULT</p>
+
+        <!-- placeholder for contour plot -->
+        <img src="" class='contourplot' alt="">
+        
+        <br><br><br><br><br>
+
+        <div class = 'slidecontainer'>
+            <input type="range" min="0.1" max="1.0" value="0.5" step = '0.01' class="slider" id="myRange">
+        </div>
+        <div>
+            <p id="demo">time = </p>
+        </div>
+
+        <p id="finaldisplay">You selected </p>
+        <a href="newpage.html"></a>
+    </div>
+
+    <!-- load scripts -->
+    <script src="main.js"></script>
+</body>
+</html>

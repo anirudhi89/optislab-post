@@ -1,9 +1,9 @@
 var printval = document.getElementById("selectedval");
-var dropdown = document.getElementById('type')
+var dropdown = document.getElementById('response')
 var selectedval = dropdown.value
 var finalsend = document.getElementById('finaldisplay')
 
-var slider = document.getElementById("myRange");
+var slider = document.getElementById("timeSlider");
 var output = document.getElementById("demo");
 
 //set variable to value of dropdown, print text at bottom, update text at very bottom with filename and timestamp

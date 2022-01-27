@@ -28,7 +28,7 @@ slider.oninput = function() {
 
 function update() {
     finalsend.innerText = '';
-    finalsend.innerHTML = "You chose " + selectedval + " @ " + slider.value;
+    finalsend.innerHTML = "You chose " + selectedval + " @ time = " + slider.value;
 
 }
 
